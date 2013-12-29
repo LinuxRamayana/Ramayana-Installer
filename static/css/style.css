@@ -1,0 +1,319 @@
+* {padding: 0 ; margin: 0;}
+
+@font-face{
+	font-family: philosopher;
+	src: url('philosopher.regular.ttf');
+} 
+
+body {
+	background-color: #093E83;
+	background-image: linear-gradient(rgba(255,255,255,.2) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.2) 1px, transparent 1px),
+	linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	
+}
+
+header {
+	background: linear-gradient(rgb(94, 91, 92), rgb(50, 50, 50)) repeat scroll 0% 0% rgb(94, 91, 92);
+    background-color: rgb(94, 91, 92);
+    background-image: linear-gradient(rgb(94, 91, 92), rgb(50, 50, 50));
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+	border-radius: 5px 5px 0px 0px;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset;
+	border-bottom: 1px solid rgb(17, 17, 17);
+	height: 26px;
+	line-height: 26px;
+	padding: 0px 100px;
+	z-index: 1;
+	position: relative;
+}
+
+header nav ul li {
+	display: block;
+	font-size: 20px;
+	color: white;
+}
+
+aside {
+	padding-left: 100px;
+	padding-right: 150px;
+	c
+	}
+
+h1 {font-size: 50px; color:#DEDFE3; }
+h2 {font-size: 40px; color:#DEDFE3;}
+h3 {font-size: 30px; color:#DEDFE3;}
+h4 {font-size: 25px; color:#DEDFE3;}
+h5 {font-size: 17px; color:#DEDFE3;}
+p {font-weight: bold;}
+
+
+#setting {
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 150px;	
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	
+	}
+
+a:active {
+	color: white;
+}
+
+a.sexybutton:hover {
+	border: 1px solid #B8B8B8;
+	border-bottom: 4px solid #B8B8B8;
+}
+
+a.sexybutton:active {
+	background: black; color: white;
+	border-bottom: 4px solid white;
+
+}
+
+a.sexybutton {
+	color: black;
+	border: 1px solid white;
+	padding: 6px 15px;
+	border-radius: 6px;
+	background: white;
+	text-decoration: none;	
+	display: inline;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px;
+	float: right;
+	font-size: 18px;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;	
+}
+
+.triangle {
+	background-image:url('../img/triangle.png');
+}
+
+.text-alert {color: red;}
+
+.OneBorder {
+	width: 100%;
+	background: #F3F3F3; 
+	height: 150px;	
+	border: 2px solid black;
+	border-radius: 10px;
+	padding:  10px;
+}
+
+.TwoBorder {
+	background: white;
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 75px;
+}
+
+button.ContenBorder {
+	border: 2px solid black;
+	border-radius: 10px;
+	background: #E06666;
+	margin: 3px;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	width: 400px;
+	text-align: center;
+	z-index: 1;
+	height: 69px;
+}
+
+button.ContenBorder:hover {
+	border: 2px solid red;
+}
+
+li.add {
+	display: inline;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	background: white;
+	border: 2px solid black;
+	margin: 4px;
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;	
+}
+
+li.add:hover {
+	background: black;
+	color: white;
+}
+
+li.add:active{
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-ms-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;	
+	border: 3px solid white;
+}
+
+.overlay {
+	z-index: 10px;
+	position: relative;
+	width: 300px;
+	background: white; 
+	border: 2px solid black;
+	padding: 20px;
+	}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -130px;
+}	
+
+button.partition_choice {
+	background: #E69138; 
+	height:  65px;
+	width: 360px;
+	border: 3px solid black;
+	position: absolute;
+	margin-top: 0.9px;	
+	}
+
+button.partition_kosong {
+	height:  65px;
+	background: white;
+	border: 3px dotted black;
+	margin-top: 1px;
+}
+
+input.partition_choice {
+	background: #E69138; 
+	height:  40px;
+	border: 2px solid black;
+	position: absolute;
+	}
+
+input.ContenBorder {
+	border: 2px solid black;
+	border-radius: 10px;
+	background: #E69138;
+	margin: 2px;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+
+button.partition_all {
+	border: 2px solid black;
+	border-radius: 10px;
+	background: #E69138;
+	margin: 2px;
+	padding: 4px;
+	font-weight: bold;
+	color: white;
+	font-size: 17px;
+	width: 200px;
+	text-align: center;
+	z-index: 1;
+	height: 65px;
+	text-decoration: underline;
+}
+
+.kiri {
+	float: left;
+}
+
+.kanan {
+	margin: 2px;	
+	float: left;
+	width: 690px;
+	background: #9D9D9D ;
+	border: 0px solid #CCCCCC ;
+	border-radius: 10px;
+	height: 67px;
+	padding: 2px;
+
+}
+
+/* Label Typo */
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	font-size: 25px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	left: 0;
+	bottom: 1px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.checkbox label {
+	margin-bottom: 10px;
+	color: #DEDFE3;
+}
+.checkbox label:before {
+    border-radius: 1px;
+    
+}
+
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	color: #f3f3f3;
+	text-align: center;
+    line-height: 15px;
+}
+.leftarrow {
+	background-image: url('../img/left_arrow.png');
+	background-repeat: no-repeat;
+	background-size: 13px; 13px;
+	padding-left: 15px;
+	margin-right: 10px;
+}
+
+.rightarrow {
+	background-image: url('../img/right_arrow.png');
+	background-repeat: no-repeat;
+	background-size: 13px; 13px;
+	padding-left: 15px;
+	margin-left: 10px;
+}
